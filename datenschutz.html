@@ -38,34 +38,44 @@
   <ul>
     <li><strong>Lokal:</strong> Cassy läuft auf dem eigenen Rechner des Entwicklers. Die Google-Anmeldedaten (OAuth-Token) werden ausschließlich dort gespeichert, in einem nur für den Benutzer lesbaren Ordner. Es gibt keinen eigenen Server.</li>
     <li><strong>Google:</strong> Abruf und Änderungen erfolgen direkt über die offiziellen Google-Schnittstellen (Google Ireland Limited bzw. Google LLC).</li>
-    <li><strong>Sprachmodell:</strong> Damit Cassy eine Anfrage beantworten kann, werden die dafür nötigen Inhalte (zum Beispiel der Text einer E-Mail, die zusammengefasst werden soll) an das von Cassy genutzte Sprachmodell von OpenAI übermittelt und dort verarbeitet.</li>
-    <li><strong>Entwicklungswerkzeuge:</strong> Nur wenn der Entwickler es im Einzelfall ausdrücklich veranlasst, kann Cassy Inhalte für eine technische Analyse an die Entwicklungswerkzeuge Claude Code (Anthropic) oder Codex (OpenAI) übergeben.</li>
+    <li><strong>Sprachmodell:</strong> Damit Cassy eine Anfrage beantworten kann, werden die dafür nötigen Inhalte (zum Beispiel der Text einer E-Mail, die zusammengefasst werden soll) an das von Cassy genutzte Sprachmodell von OpenAI übermittelt und dort verarbeitet. Die Anbindung erfolgt über das persönliche ChatGPT-Konto des Entwicklers (Codex).</li>
+    <li><strong>Entwicklungswerkzeuge:</strong> Nur wenn der Entwickler es im Einzelfall ausdrücklich veranlasst, kann Cassy Inhalte für eine technische Analyse an die Entwicklungswerkzeuge Claude Code (Anthropic, persönliches Claude-Konto des Entwicklers) oder Codex (OpenAI) übergeben.</li>
     <li><strong>Lokale Gesprächsnotizen:</strong> Cassy speichert lokal kurze Zusammenfassungen ihrer Gespräche (keine Mitschnitte, keine Audioaufnahmen). Darin können Stichworte aus bearbeiteten Inhalten vorkommen.</li>
   </ul>
   <p>Weitere Empfänger gibt es nicht. Google-Daten werden nicht verkauft, nicht für Werbung verwendet und nicht an Dritte weitergegeben, außer wie oben beschrieben zur Ausführung der vom Entwickler angeforderten Funktion.</p>
 
-  <h2>5. Google API Services User Data Policy</h2>
-  <p>Die Nutzung von Informationen, die Cassy über Google-Schnittstellen erhält, und ihre Übertragung an andere Anwendungen halten sich an die
-  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Anforderungen zur eingeschränkten Nutzung („Limited Use“).
-  Insbesondere werden Google-Nutzerdaten nur für die vom Entwickler selbst angeforderten Funktionen verwendet, nicht für Werbung und nicht zum Entwickeln, Verbessern oder Trainieren allgemeiner KI- oder Machine-Learning-Modelle.</p>
+  <h2>5. KI-Modelltraining</h2>
+  <p>Der Entwickler verwendet Google-Daten nicht, um eigene KI-Modelle zu entwickeln oder zu trainieren.</p>
+  <p>Für die Verarbeitung bei den genannten KI-Anbietern gelten deren Richtlinien und die Datenschutzeinstellungen der jeweiligen Konten des Entwicklers:</p>
+  <ul>
+    <li><strong>OpenAI:</strong> Bei persönlichen ChatGPT-Konten kann OpenAI nach eigenen Angaben Inhalte – auch aus Codex – zur Verbesserung seiner Modelle verwenden, sofern dies in den Datenkontrollen des Kontos nicht abgeschaltet ist
+    (<a href="https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance">Hinweise von OpenAI</a>).</li>
+    <li><strong>Anthropic:</strong> Bei persönlichen Claude-Konten, einschließlich Claude Code, entscheidet die Kontoeinstellung zur Modellverbesserung, ob Inhalte dafür verwendet werden
+    (<a href="https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training">Hinweise von Anthropic</a>).</li>
+  </ul>
 
-  <h2>6. Daten Dritter</h2>
+  <h2>6. Google API Services User Data Policy</h2>
+  <p>Für Daten aus Google-Schnittstellen gilt die
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> einschließlich der Anforderungen zur eingeschränkten Nutzung („Limited Use“).
+  Cassy ist danach ausgerichtet: Google-Daten werden nur für die vom Entwickler selbst angeforderten Funktionen verwendet, nicht verkauft, nicht für Werbung genutzt und nur wie in Abschnitt 4 beschrieben übertragen. Für die Verarbeitung bei den KI-Anbietern gilt Abschnitt 5.</p>
+
+  <h2>7. Daten Dritter</h2>
   <p>E-Mails, Termine und Dokumente können personenbezogene Daten anderer Personen enthalten (zum Beispiel Absender oder Teilnehmende). Diese werden nur im Rahmen der oben genannten persönlichen Zwecke verarbeitet.</p>
 
-  <h2>7. Speicherdauer und Widerruf</h2>
+  <h2>8. Speicherdauer und Widerruf</h2>
   <p>Die Anmeldedaten bleiben gespeichert, bis der Zugriff widerrufen oder Cassy neu angemeldet wird. Der Zugriff lässt sich jederzeit im Google-Konto unter
   <a href="https://myaccount.google.com/permissions">Drittanbieter-Apps mit Kontozugriff</a> widerrufen; danach kann Cassy nicht mehr auf das Konto zugreifen.</p>
 
-  <h2>8. Diese Website</h2>
+  <h2>9. Diese Website</h2>
   <p>Diese Website ist eine statische Seite ohne Cookies, ohne Analyse- oder Trackingdienste und ohne Formulare. Sie wird über GitHub Pages (GitHub, Inc.) bereitgestellt;
   beim Aufruf verarbeitet GitHub technisch notwendige Verbindungsdaten wie die IP-Adresse, um die Seite auszuliefern und abzusichern. Näheres in der
   <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
 
-  <h2>9. Ihre Rechte</h2>
+  <h2>10. Ihre Rechte</h2>
   <p>Soweit die Datenschutz-Grundverordnung anwendbar ist, bestehen Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Beschwerde bei einer Datenschutz-Aufsichtsbehörde.
   Anfragen bitte an die oben genannte E-Mail-Adresse.</p>
 
-  <h2>10. Änderungen</h2>
+  <h2>11. Änderungen</h2>
   <p>Diese Erklärung wird angepasst, wenn sich Funktionen oder Datenwege von Cassy ändern.</p>
 </div></main>
 <footer><div class="wrap">
